@@ -37,6 +37,12 @@ public class Programa {
 		System.out.println("Inserted! New id = " + newSeller.getId());
 		
 		
+		System.out.println("\n=== Teste 5: seller UpDate===");
+		seller = sellerDao.findById(1);
+		seller.setName("Martha Wayne");
+		sellerDao.update(seller);
+		System.out.println("Update completed");
+		
 		
 	}
 
